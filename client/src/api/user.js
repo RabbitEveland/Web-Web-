@@ -1,0 +1,12 @@
+import request from '@/utils/request'
+export const login = (data) => request.post('/auth/login', data)
+export const register = (data) => request.post('/auth/register', data)
+export const getProfile = () => request.get('/user/profile')
+export const updateProfile = (data) => request.put('/user/profile', data)
+export const getFavorites = () => request.get('/favorites')
+export const addFavorite = (goods_id) => request.post('/favorites', { goods_id })
+export const deleteFavorite = (goodsId) => request.delete(`/favorites/${goodsId}`)
+export const getAddresses = () => request.get('/addresses')
+export const createAddress = (data) => request.post('/addresses', data)
+export const updateAddress = (id, data) => request.put(`/addresses/${id}`, data)
+export const deleteAddress = (id) => request.delete(`/addresses/${id}`)
