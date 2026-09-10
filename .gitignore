@@ -8,6 +8,7 @@ mysql-runtime/mysql-*/
 .pnpm-store/
 .doc-tools/
 Navicat Premium Lite 17/
+runtime-logs/
 ~$*.docx
 *.doc
 *.docx

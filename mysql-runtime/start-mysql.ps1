@@ -4,7 +4,7 @@ $serverHome = 'D:\web-mall-mysql'
 $serverExe = Join-Path $serverHome 'bin\mysqld.exe'
 $configFile = Join-Path $serverHome 'my.ini'
 
-$portInUse = Get-NetTCPConnection -LocalPort 3306 -ErrorAction SilentlyContinue
+$portInUse = netstat.exe -ano | Select-String -SimpleMatch ':3306 ' | Select-String -Pattern 'LISTENING'
 if ($null -ne $portInUse) {
   Write-Host 'Port 3306 is already in use. MySQL may already be running.'
   exit 0
