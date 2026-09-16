@@ -9,6 +9,8 @@ mysql-runtime/mysql-*/
 .doc-tools/
 Navicat Premium Lite 17/
 runtime-logs/
+tests/artifacts/
+tests/tools/
 ~$*.docx
 *.doc
 *.docx

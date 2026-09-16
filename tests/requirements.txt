@@ -1,0 +1,3 @@
+# 覆盖电脑上可能配置的失效/不完整镜像源，直接从官方 PyPI 安装。
+--index-url https://pypi.org/simple
+selenium>=4.25.0
